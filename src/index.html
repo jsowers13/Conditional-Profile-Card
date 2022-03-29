@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Conditional Profile Card</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
@@ -11,6 +11,10 @@
       crossorigin="anonymous"
     />
     <link rel="shortcut icon" href="./assets/img/4geeks.ico" />
+    <script
+      src="https://kit.fontawesome.com/b2933b47eb.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -19,69 +23,87 @@
         <label>Include Cover</label>
         <select class="picker" for="includeCover">
           <option value="">Include Cover</option>
-          <option value="true">True</option>
-          <option value="false">False</option>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
         </select>
       </li>
+      <li><label>Cover Photo Address</label><input class = "picker" for="background" type="text" placeholder="Cover Photo URL"/></li></li>
+      <li><label>Personal Photo</label><input class = "picker" for="avatarURL" type="text" placeholder="Profile Pic URL"/></li>
       <li>
         <label>Name</label>
-        <input class="picker" for="name" type="text" />
+        <input class="picker" for="name" type="text" placeholder="First Name" />
       </li>
       <li>
         <label>Last Name</label>
-        <input class="picker" for="lastname" type="text" />
+        <input
+          class="picker"
+          for="lastname"
+          type="text"
+          placeholder="Last Name"
+        />
       </li>
       <li>
         <label>S.M. Position</label>
         <select class="picker" for="socialMediaPosition">
+          <option value="">Select</option>
           <option value="position-left">Left</option>
           <option value="position-right">Right</option>
         </select>
       </li>
       <li>
         <label>Twitter</label>
-        <input class="picker" for="twitter" type="text" />
+        <input class="picker" for="twitter" type="text" placeholder="Twitter" />
       </li>
       <li>
         <label>Github</label>
-        <input class="picker" for="github" type="text" />
+        <input class="picker" for="github" type="text" placeholder="GitHub" />
       </li>
       <li>
         <label>LinkedIn</label>
-        <input class="picker" for="linkedin" type="text" />
+        <input
+          class="picker"
+          for="linkedin"
+          type="text"
+          placeholder="LinkedIn"
+        />
       </li>
       <li>
         <label>Instagram</label>
-        <input class="picker" for="instagram" type="text" />
+        <input
+          class="picker"
+          for="instagram"
+          type="text"
+          placeholder="Instagram"
+        />
       </li>
       <li>
         <label>Role</label>
-        <select class="picker" for="role">
-          <option value="">null</option>
+        <input class="picker" for="role" type="text" placeholder="Your Role">
+          <!-- <option value="">Your Role</option>
           <option value="Web Developer">Web Developer</option>
           <option value="Floor Planner">Floor Planner</option>
-          <option value="Technical Writter">Technical Writter</option>
-        </select>
+          <option value="Technical Writter">Technical Writter</option> -->
+      </input>
       </li>
       <li>
         <label>City</label>
-        <select class="picker" for="city">
-          <option value="">null</option>
+        <input class="picker" for="city" type="text" placeholder="City">
+          <!-- <option value="">City</option>
           <option value="Miami">Miami</option>
           <option value="Munich">Munich</option>
           <option value="Caracas">Caracas</option>
-          <option value="Toronto">Toronto</option>
-        </select>
+          <option value="Toronto">Toronto</option> -->
+          </input>
       </li>
       <li>
         <label>Country</label>
-        <select class="picker" for="country">
-          <option value="">null</option>
+        <input class="picker" for="country" type="text" placeholder="Country">
+          <!-- <option value="">Country</option>
           <option value="USA">USA</option>
           <option value="Germany">Germany</option>
           <option value="Canada">Canada</option>
-          <option value="Venezuela">Venezuela</option>
-        </select>
+          <option value="Venezuela">Venezuela</option> -->
+          </input>
       </li>
     </ul>
     <div id="widget_content"></div>

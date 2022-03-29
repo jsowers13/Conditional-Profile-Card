@@ -1,11 +1,12 @@
 .filters {
   background: white;
-  width: 100%;
+  max-width: 100%;
 }
 .filters li {
   display: inline-block;
-  max-width: 80px;
+  max-width: 7vw;
   padding: 3px;
+  margin: 3px;
 }
 .filters li label {
   display: block;
